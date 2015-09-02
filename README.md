@@ -5,4 +5,5 @@ You just need to execute the bash file in terminal and it takes care of everythi
 
 
 $ chmod +x install-ocv.sh
+
 $ ./install-ocv.sh
