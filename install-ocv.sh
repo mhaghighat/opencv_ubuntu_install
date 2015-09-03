@@ -1,4 +1,4 @@
-version="$(wget -q -O - http://sourceforge.net/projects/opencvlibrary/files/opencv-unix | egrep -m1 -o '\"[0-9](\.[0-9])+' | cut -c2-)"
+version="$(wget -q -O - http://sourceforge.net/projects/opencvlibrary/files/opencv-unix | egrep -m1 -o '\"[0-9](\.[0-9]+)+' | cut -c2-)"
 echo "Installing OpenCV" $version
 mkdir OpenCV
 cd OpenCV
@@ -8,7 +8,7 @@ sudo apt-get -y upgrade
 echo "Removing any pre-installed ffmpeg and x264"
 sudo apt-get -qq remove ffmpeg x264 libx264-dev
 echo "Installing Dependenices"
-sudo apt-get -y install build-essential cmake pkg-config libjpeg62-dev libjasper-dev libgtk2.0-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev python-dev python-numpy libtbb-dev libqt4-dev x264 v4l-utils ffmpeg
+sudo apt-get -y install build-essential cmake pkg-config libjpeg62-dev libjasper-dev libgtk2.0-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev python-dev python-numpy libtbb-dev libqt4-dev x264 v4l-utils
 echo "Downloading OpenCV" $version
 wget -O OpenCV-$version.zip http://sourceforge.net/projects/opencvlibrary/files/opencv-unix/$version/opencv-"$version".zip/download
 echo "Installing OpenCV" $version
