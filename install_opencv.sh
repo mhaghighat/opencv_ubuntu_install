@@ -5,7 +5,7 @@ sudo apt-get -y upgrade
 echo "Removing any pre-installed ffmpeg and x264"
 sudo apt-get -qq remove ffmpeg x264 libx264-dev
 echo "Installing Dependenices"
-sudo apt-get -y install build-essential cmake pkg-config libjpeg62-dev libjasper-dev libgtk2.0-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev python-dev python-numpy libtbb-dev libqt4-dev x264 v4l-utils
+sudo apt-get -y install build-essential cmake pkg-config libjpeg62-dev libjasper-dev libgtk2.0-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libdc1394-22-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev python-dev python-numpy libtbb-dev libqt4-dev x264 v4l-utils git
 
 mkdir ~/OpenCV
 cp compile_opencv.sh ~/OpenCV/
